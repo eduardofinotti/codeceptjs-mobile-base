@@ -1,0 +1,30 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Appium": {
+      "host": "localhost",
+      "port": "4723",
+      "app": "/Users/eduardofinotti/Documents/codeceptjs-mobile/16107_cieeRelease-1.7.4.apk",
+      "platform": "Android",
+      "desiredCapabilities": {
+        "appPackage": "br.com.quiz.ciee",
+        "appActivity": "br.com.bravi.quiz.view.SplashActivity",
+        "deviceName": "0042680700",
+        "platformVersion": "8.0.0",
+        "browserName": "",
+        "appWaitDuration": 3000,
+        "deviceReadyTimeout": 10
+
+      }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "codeceptjs-mobile",
+  "translation": "pt-BR"
+}
